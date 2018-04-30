@@ -93,7 +93,7 @@ _firebaseClient.ref("/users/$userId").get(ctx);
 
 ```
 
-!(firebase)[firebase.png]
+![firebase](firebase.png)
 
 ## Firebase Functions
 Although they are on the way out, we also used some Firebase functions that scrape for the list of departments every day at 5:00p. Those are written in NodeJS, and look something like this. Out of all the techs used in MSUBot, this is the least performant, and least easy to maintain:
