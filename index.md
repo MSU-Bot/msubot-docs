@@ -295,7 +295,7 @@ _firebaseClient.ref("/users/$userId").get(ctx);
 ```
 
 ## Firebase Functions
-Although they are on the way out, we also used some Firebase functions that scrape for the lost of departments every day at 5:00p. Those are written in NodeJS, and look something like this. Out of all the techs used in MSUBot, this is the least performant, and least easy to maintain:
+Although they are on the way out, we also used some Firebase functions that scrape for the list of departments every day at 5:00p. Those are written in NodeJS, and look something like this. Out of all the techs used in MSUBot, this is the least performant, and least easy to maintain:
 
 ```javascript
 export const scrapeDepartments = functions.https.onRequest(async (request, response) => {
